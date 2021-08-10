@@ -1,5 +1,5 @@
 py==1.10.0
 pytest==6.2.3
 pyyaml==5.4.1
-Sphinx==3.5.4
+Sphinx==4.1.2
 sphinx_rtd_theme==0.5.2
