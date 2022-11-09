@@ -1,0 +1,123 @@
+name: Refinement test data
+author: David Waterman (2022)
+license: CC-BY 4.0
+description: >
+  Data files used in DIALS tests, mainly for geometry refinement but
+  also used elsewhere.
+
+  These files were originally located in the dials_regression
+  repository. They are derived files created by DIALS processing with
+  various versions of DIALS. This version information is not generally
+  available.
+
+
+data:
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/centroid/experiments_XPARM_REGULARIZED.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/hierarchy_test/datablock.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/cspad_refinement/regression_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/cspad_refinement/refine.phil
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/cspad_refinement/cspad_refined_experiments_step6_level2_300.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/cspad_refinement/cspad_reflections_step7_300.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/outlier_rejection/residuals.dat
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/centroid_outlier/residuals.refl
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/i23_as_24_panel_barrel/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/i23_as_24_panel_barrel/indexed.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_stills/combined_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_stills/regression_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_stills/combined_reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_sweep_one_sample/glucose_isomerase/SWEEP1/index/sv_refined_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_041/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_041/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_023/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_023/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_024/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_024/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_022/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_022/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_047/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_047/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_020/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_020/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_044/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_044/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_043/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_043/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_017/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_017/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_037/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_037/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_018/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_018/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_048/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_048/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_025/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_025/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_032/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_032/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_009/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_009/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_004/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_004/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_046/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_046/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_019/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_019/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_033/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_033/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_029/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_029/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_013/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_013/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_028/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_028/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_038/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_038/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_031/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_031/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_014/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_014/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_035/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_035/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_011/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_011/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_012/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_012/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_042/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_042/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_005/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_005/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_030/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_030/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_040/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_040/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_002/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_002/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_006/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_006/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_007/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_007/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_003/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_003/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_021/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_021/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_036/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_036/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_026/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_026/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_027/reflections.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/data/sweep_027/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/multi_narrow_wedges/regression_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/xfel_metrology/benchmark_level2d.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/xfel_metrology/refine.phil
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/xfel_metrology/benchmark_level2d.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/varying_beam_direction/refined_static.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/varying_beam_direction/refined_static.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/dials-423/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/dials-423/subset.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/i04_weak_data/experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/i04_weak_data/regression_experiments.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/i04_weak_data/indexed_strong.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/centroid/experiments_XPARM_REGULARIZED.json
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/centroid/spot_1000_xds.pickle
+  - url: https://github.com/dials/data-files/raw/41bdd5db9ef1407869eb9c3a06c4e20796d82779/refinement_test_data/centroid/spot_all_xds.pickle
+
