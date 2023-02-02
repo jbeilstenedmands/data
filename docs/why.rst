@@ -1,8 +1,8 @@
 ======================
-What is ``dials_data``
+What is ``dials-data``
 ======================
 
-``dials_data`` is a lightweight, simple python(-only) package.
+``dials-data`` is a lightweight, simple python(-only) package.
 It is used to provide access to data files used in regression tests,
 but does not contain any of those data files itself.
 
@@ -11,7 +11,7 @@ environment for tests in DIALS_, dxtbx_, xia2_ and related packages,
 it has no dependencies on either cctbx_ or DIALS_, in fact
 all dependencies are explicitly declared in the setup.py_ file and are
 installable via standard setuptools/pip methods.
-This means ``dials_data`` can easily be used in other projects accessing
+This means ``dials-data`` can easily be used in other projects accessing
 the same data, and can be used in temporary environments such as
 Travis containers.
 
@@ -52,9 +52,9 @@ needed downloading separately and could not easily be used outside
 of the dials_ repository and not at all outside of a dials_
 distribution. Adding data files was still a very involved process.
 
-``dials_data`` is the next iteration of our solution to this problem.
+``dials-data`` is the next iteration of our solution to this problem.
 
-What can ``dials_data`` do
+What can ``dials-data`` do
 ==========================
 
 The entire pipeline, from adding new data files, to the automatic

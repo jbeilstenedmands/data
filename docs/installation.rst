@@ -4,27 +4,27 @@
 Installation and Usage
 ======================
 
-There are a number of possible ways to install ``dials_data``.
+There are a number of possible ways to install ``dials-data``.
 From the simplest to the most involved these are:
 
 
 As an end user
 ^^^^^^^^^^^^^^
 
-Quite simply: You do not need to install ``dials_data``.
+Quite simply: You do not need to install ``dials-data``.
 It does not add any functionality to end users.
 
 
-As a developer to run tests with ``dials_data``
+As a developer to run tests with ``dials-data``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You may want to install ``dials_data`` so that you can run regression tests locally.
+You may want to install ``dials-data`` so that you can run regression tests locally.
 Or you might say that continuous integration should take care of this.
 Both are valid opinions.
 
 .. _basic-installation:
 
-However you do not need to install ``dials_data`` from source. You can simply run::
+However you do not need to install ``dials-data`` from source. You can simply run::
 
     pip install -U dials-data
 
@@ -32,7 +32,7 @@ or, in a conda environment::
 
     conda install -c conda-forge dials-data
 
-This will install or update an existing installation of ``dials_data``.
+This will install or update an existing installation of ``dials-data``.
 
 You can then run your tests as usual using::
 
@@ -43,16 +43,16 @@ probably need to run it as::
 
     pytest --regression
 
-to actually enable those tests depending on files from ``dials_data``.
+to actually enable those tests depending on files from ``dials-data``.
 
 
-As a developer to write tests with ``dials_data``
+As a developer to write tests with ``dials-data``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Install ``dials_data`` as above.
+Install ``dials-data`` as above.
 
 If your test is written in pytest and you use the fixture provided by
-``dials_data`` then you can use regression datasets in your test by
+``dials-data`` then you can use regression datasets in your test by
 adding the ``dials_data`` fixture to your test, ie:
 
 .. code-block:: python
@@ -89,7 +89,7 @@ or by going through the
 `dataset definition files in the repository <https://github.com/dials/data/tree/master/dials_data/definitions>`__.
 
 If you want the tests on your project to be runnable even when
-``dials_data`` is not installed in the environment you could add a
+``dials-data`` is not installed in the environment you could add a
 dummy fixture to your ``conftest.py``, for example:
 
 .. code-block:: python
@@ -103,24 +103,24 @@ dummy fixture to your ``conftest.py``, for example:
             pytest.skip("Test requires python package dials_data")
 
 
-As a developer who wants to add files to ``dials_data``
+As a developer who wants to add files to ``dials-data``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Follow the steps in :doc:`/contributing` to install ``dials_data`` into a
+Follow the steps in :doc:`/contributing` to install ``dials-data`` into a
 virtual environment.
 
-You can install ``dials_data`` using ``pip`` as above *unless* you want to
+You can install ``dials-data`` using ``pip`` as above *unless* you want to
 immediately use your dataset definition in tests without waiting for your
 pull request to be accepted. In this case you can follow the instructions
 in the next step.
 
 
-As a developer who wants to extend ``dials_data``
+As a developer who wants to extend ``dials-data``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Have a look at the :doc:`/contributing` page.
 
-Install your own fork of ``dials_data`` by running::
+Install your own fork of ``dials-data`` by running::
 
     pip install -e path/to/fork
 
@@ -133,12 +133,12 @@ have to run::
     python setup.py develop
 
 This will update your python package index and install/update any
-``dials_data`` dependencies if necessary.
+``dials-data`` dependencies if necessary.
 
 To switch back from using your checked out version to the 'official'
-version of ``dials_data`` you can uninstall it with::
+version of ``dials-data`` you can uninstall it with::
 
-    pip uninstall dials_data
+    pip uninstall dials-data
 
 and then reinstall it following the
 `instructions at the top of this page <basic-installation_>`__.
@@ -157,4 +157,4 @@ In order of evaluation:
   ``dials_data`` exists or can be created underneath that location then
   use that.
 * Use ``~/.cache/dials_data`` if it exists or can be created.
-* Otherwise ``dials_data`` will fail with a RuntimeError.
+* Otherwise ``dials-data`` will fail with a RuntimeError.
