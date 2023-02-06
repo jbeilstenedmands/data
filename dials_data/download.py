@@ -250,7 +250,7 @@ def _fetch_file(
                 with tarfile.open(source["file"]) as tar:
                     for f in source["files"]:
                         try:
-                            tar.extract(f, path=source["file"].parent)
+                            tar.extract(f, path=source["file"].parent, set_attrs=False)
                         except KeyError:
                             print(
                                 f"Expected file {f} not present "
