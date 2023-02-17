@@ -14,6 +14,7 @@ description: >
 data:
 
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/hierarchy_test/cspad-single-image-datablock.json
+  - url: https://github.com/dials/data-files/raw/74bbe2ca08260eb3ba51573747acc2f2673ba472/refinement_test_data/hierarchy_test/cspad-single-image.expt
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/outlier_rejection/residuals-with-outliers.dat
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/centroid_outlier/centroid_outlier_residuals.refl
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/i23_as_24_panel_barrel/I23_24_panel.json

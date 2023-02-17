@@ -24,12 +24,12 @@ data:
   - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/datablock.json
   - url: https://github.com/dials/data-files/raw/12c29cae96057da91a2da5c5ce042846cf9a79fa/centroid_test_data/datablock_with_bad_lookup.json
   - url: https://github.com/dials/data-files/raw/12c29cae96057da91a2da5c5ce042846cf9a79fa/centroid_test_data/datablock_with_lookup.json
-  - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/experiments.json
+  - url: https://github.com/dials/data-files/raw/3eb66b340b7ade76dd8c41abfbf6f2f83bfb846a/centroid_test_data/experiments.json
   - url: https://github.com/dials/data-files/raw/12c29cae96057da91a2da5c5ce042846cf9a79fa/centroid_test_data/experiments_with_bad_lookup.json
   - url: https://github.com/dials/data-files/raw/12c29cae96057da91a2da5c5ce042846cf9a79fa/centroid_test_data/experiments_with_lookup.json
   - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/fake_long_experiments.json
   - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/imported_experiments.json
-  - url: https://github.com/dials/data-files/raw/f18bfc49b4a086db0145097ea2cb67cf23be0835/centroid_test_data/indexed.expt
+  - url: https://github.com/dials/data-files/raw/3eb66b340b7ade76dd8c41abfbf6f2f83bfb846a/centroid_test_data/indexed.expt
   - url: https://github.com/dials/data-files/raw/f18bfc49b4a086db0145097ea2cb67cf23be0835/centroid_test_data/indexed.refl
   - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/integrated.pickle
   - url: https://github.com/dials/data-files/raw/a02df474ff193f102624bd08038cdc2c421dc8ee/centroid_test_data/integrated.refl
