@@ -21,3 +21,4 @@ data:
  - url: https://dials.diamond.ac.uk/regression_data/multi_crystal_proteinase_k/reflections_5.pickle
  - url: https://dials.diamond.ac.uk/regression_data/multi_crystal_proteinase_k/reflections_7.pickle
  - url: https://dials.diamond.ac.uk/regression_data/multi_crystal_proteinase_k/reflections_8.pickle
+ - url: https://files.rcsb.org/download/2id8.pdb
