@@ -279,10 +279,11 @@ class DataFetcher:
     Do not use this class directly in tests! Use the dials_data fixture.
     """
 
-    def __init__(self, read_only=False):
+    def __init__(self, read_only: bool = False, verify: bool = True):
         self._cache: dict[str, Optional[Path]] = {}
         self._target_dir: Path = dials_data.datasets.repository_location()
         self._read_only: bool = read_only and os.access(self._target_dir, os.W_OK)
+        self._verify: bool = verify
 
     def __repr__(self) -> str:
         return "<{}DataFetcher: {}>".format(
@@ -333,14 +334,17 @@ class DataFetcher:
 
     def _attempt_fetch(self, test_data: str) -> Optional[Path]:
         if self._read_only:
-            data_available = fetch_dataset(test_data, pre_scan=True, read_only=True)
+            hashinfo = fetch_dataset(test_data, pre_scan=True, read_only=True)
         else:
-            data_available = fetch_dataset(
+            hashinfo = fetch_dataset(
                 test_data,
                 pre_scan=True,
                 read_only=False,
+                verify=self._verify,
             )
-        if data_available:
+            if self._verify and not hashinfo:
+                raise RuntimeError(f"Error downloading dataset {test_data}")
+        if hashinfo:
             return self._target_dir / test_data
         else:
             return None

@@ -8,6 +8,7 @@ History
 * Fix permission generation when extracting tar archives. Files extracted will be created with
   default permissions, instead of what has been packed in with the archive. This solves the issue
   of shared data stores becoming inaccessible to some users.
+* ``DataFetcher``: new parameter verify=True to verify download hashinfo by default.
 
 2.4 (2022-03-07)
 ^^^^^^^^^^^^^^^^
