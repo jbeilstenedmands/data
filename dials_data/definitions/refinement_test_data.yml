@@ -28,7 +28,7 @@ data:
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/dials-423/dials-423.json
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/dials-423/dials-423.pickle
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/i04_weak_data/i04-weak.pickle
-  - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/i04_weak_data/i04-weak-regression.json
+  - url: https://github.com/dials/data-files/raw/38d607c88483fe95ff37d1886da03d1f0cf4a568/refinement_test_data/i04_weak_data/i04-weak-regression.json
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/i04_weak_data/i04-weak.json
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/centroid/from-xds-all.pickle
   - url: https://github.com/dials/data-files/raw/d189d8ab4a6dc15e8d24b909e8d8f00c64366f1c/refinement_test_data/centroid/from-xds-1000.pickle
