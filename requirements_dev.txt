@@ -1,5 +1,5 @@
 coverage==7.3.1
-importlib_resources==6.0.1
+importlib_resources==6.3.2
 py==1.11.0
 pytest==7.4.2
 pyyaml==6.0.1

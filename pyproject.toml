@@ -24,7 +24,12 @@ classifiers = [
 keywords = ["dials", "dials_data"]
 dynamic = ["readme"]
 requires-python = ">=3.8"
-dependencies = ["importlib_resources>=1.1,<6.2", "pytest", "pyyaml", "requests"]
+dependencies = [
+    "importlib_resources>=1.1,!=6.2,!=6.3.0,!=6.3.1",
+    "pytest",
+    "pyyaml",
+    "requests",
+]
 
 [project.urls]
 Homepage = "https://github.com/dials/data"
