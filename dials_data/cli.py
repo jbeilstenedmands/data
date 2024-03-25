@@ -128,9 +128,7 @@ The most commonly used commands are:
 Each command has its own set of parameters, and you can get more information
 by running dials.data <command> --help
 
-""".format(
-            version=version
-        ),
+""".format(version=version),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument("subcommand", help=argparse.SUPPRESS)

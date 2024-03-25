@@ -26,14 +26,14 @@ stages:
 
       - bash: |
           set -eux
-          pip install --disable-pip-version-check flake8 flake8-comprehensions
-          python .azure-pipelines/flake8-validation.py
-        displayName: Flake8 validation
+          pip install --disable-pip-version-check ruff
+          python .azure-pipelines/ruff-validation.py
+        displayName: Ruff validation
 
       - bash: |
           set -eux
           # install versions matching the ones in the corresponding pre-commit hook
-          pip install --disable-pip-version-check mypy==0.931 types-PyYAML==6.0.4 types-requests==2.27.11
+          pip install --disable-pip-version-check mypy==1.9.0 types-PyYAML==6.0.12 types-requests==2.31.0
           mypy --no-strict-optional dials_data/
         displayName: Type checking
 
@@ -85,7 +85,7 @@ stages:
           versionSpec: 3.9
 
       - bash: |
-          pip install --disable-pip-version-check -r requirements_dev.txt
+          pip install --disable-pip-version-check -r requirements_dev.txt build
         displayName: Install dependencies
 
       - bash: .azure-pipelines/update-package-version
@@ -93,7 +93,7 @@ stages:
 
       - bash: |
           set -ex
-          python setup.py sdist bdist_wheel
+          python -m build
           mkdir -p dist/pypi
           shopt -s extglob
           mv -v dist/!(pypi) dist/pypi
@@ -106,11 +106,6 @@ stages:
         inputs:
           pathToPublish: dist/
           artifactName: package
-
-      - bash: |
-          twine check dist/pypi/*
-          python setup.py checkdocs
-        displayName: Check package description
 
 - stage: update
   displayName: Update hashes

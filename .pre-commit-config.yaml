@@ -1,7 +1,7 @@
 repos:
 # Syntax validation and some basic sanity checks
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v4.5.0
   hooks:
   - id: check-merge-conflict
   - id: check-ast
@@ -11,43 +11,20 @@ repos:
     args: ['--maxkb=200']
   - id: check-yaml
 
-# Automatically sort imports
-- repo: https://github.com/PyCQA/isort
-  rev: 5.12.0
+# Linting, sorting and formatting
+- repo: https://github.com/charliermarsh/ruff-pre-commit
+  rev: v0.3.3
   hooks:
-  - id: isort
-    args: [
-           '-a', 'from __future__ import annotations',        # 3.7-3.11
-           '--rm', 'from __future__ import absolute_import',  # -3.0
-           '--rm', 'from __future__ import division',         # -3.0
-           '--rm', 'from __future__ import generator_stop',   # -3.7
-           '--rm', 'from __future__ import generators',       # -2.3
-           '--rm', 'from __future__ import nested_scopes',    # -2.2
-           '--rm', 'from __future__ import print_function',   # -3.0
-           '--rm', 'from __future__ import unicode_literals', # -3.0
-           '--rm', 'from __future__ import with_statement',   # -2.6
-          ]
-
-# Automatic source code formatting
-- repo: https://github.com/psf/black
-  rev: 23.7.0
-  hooks:
-  - id: black
-    args: [--safe, --quiet]
-
-# Linting
-- repo: https://github.com/PyCQA/flake8
-  rev: 6.1.0
-  hooks:
-  - id: flake8
-    additional_dependencies: ['flake8-comprehensions==3.8.0']
+    - id: ruff
+      args: [--fix, --exit-non-zero-on-fix]
+    - id: ruff-format
 
 # Type checking
 # Remember to change versions in .azure-pipelines/azure-pipelines.yml to match
 # the versions here.
 - repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v1.5.0
+  rev: v1.9.0
   hooks:
   - id: mypy
     files: 'dials_data/.*\.py$'
-    additional_dependencies: ['types-PyYAML==6.0.4', 'types-requests==2.27.11']
+    additional_dependencies: ['types-PyYAML==6.0.12', 'types-requests==2.31.0']
