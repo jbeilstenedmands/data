@@ -134,11 +134,7 @@ def list_known_definitions(ds_list, quiet=False) -> None:
             size_information = "unverified dataset"
         else:
             size_information = _human_readable(get_resident_size(shortname))
-        print(
-            "{shortname}: {dataset[name]} ({size_information})".format(
-                shortname=shortname, dataset=dataset, size_information=size_information
-            )
-        )
+        print(f"{shortname}: {dataset['name']} ({size_information})")
         print(
             "{indent}{author} ({license})".format(
                 author=dataset.get("author", "unknown author"),
@@ -147,7 +143,7 @@ def list_known_definitions(ds_list, quiet=False) -> None:
             )
         )
         if dataset.get("url"):
-            print("{indent}{dataset[url]}".format(indent=indent, dataset=dataset))
+            print(f"{indent}{dataset['url']}")
         print(
             "\n{}\n".format(
                 textwrap.fill(

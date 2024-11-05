@@ -17,7 +17,7 @@ echo
 
 echo "##[section]Open pull requests:"
 declare -A UPDATEBRANCHES
-for BRANCH in $(hub pr list -b master -f '%H%n'); do
+for BRANCH in $(hub pr list -b main -f '%H%n'); do
   echo ${BRANCH}
   UPDATEBRANCHES[${BRANCH}]=1
 done

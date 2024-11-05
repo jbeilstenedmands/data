@@ -119,7 +119,7 @@ def main():
         version = dials_data.__version__ + "-dev"
     parser = argparse.ArgumentParser(
         usage="dials.data <command> [<args>]",
-        description="""DIALS regression data manager v{version}
+        description=f"""DIALS regression data manager v{version}
 
 The most commonly used commands are:
    list     List available datasets
@@ -128,7 +128,7 @@ The most commonly used commands are:
 Each command has its own set of parameters, and you can get more information
 by running dials.data <command> --help
 
-""".format(version=version),
+""",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument("subcommand", help=argparse.SUPPRESS)

@@ -10,7 +10,7 @@ import tarfile
 import warnings
 import zipfile
 from pathlib import Path
-from typing import Any, Optional, Union
+from typing import Any
 from urllib.parse import urlparse
 
 import py.path
@@ -104,7 +104,7 @@ def fetch_dataset(
     read_only: bool = False,
     verbose: bool = False,
     pre_scan: bool = True,
-) -> Union[bool, dict[str, Any]]:
+) -> bool | dict[str, Any]:
     """Check for the presence or integrity of the local copy of the specified
     test dataset. If the dataset is not available or out of date then attempt
     to download/update it transparently.
@@ -280,7 +280,7 @@ class DataFetcher:
     """
 
     def __init__(self, read_only: bool = False, verify: bool = True):
-        self._cache: dict[str, Optional[Path]] = {}
+        self._cache: dict[str, Path | None] = {}
         self._target_dir: Path = dials_data.datasets.repository_location()
         self._read_only: bool = read_only and os.access(self._target_dir, os.W_OK)
         self._verify: bool = verify
@@ -332,7 +332,7 @@ class DataFetcher:
             return self.result_filter(result=py.path.local(self._cache[test_data]))
         return self.result_filter(result=self._cache[test_data])
 
-    def _attempt_fetch(self, test_data: str) -> Optional[Path]:
+    def _attempt_fetch(self, test_data: str) -> Path | None:
         if self._read_only:
             hashinfo = fetch_dataset(test_data, pre_scan=True, read_only=True)
         else:
