@@ -7,36 +7,6 @@ stages:
     pool:
       vmImage: ubuntu-20.04
     steps:
-      # Run syntax validation using oldest and latest Python
-      - task: UsePythonVersion@0
-        displayName: Set up python
-        inputs:
-          versionSpec: 3.8
-
-      - bash: python .azure-pipelines/syntax-validation.py
-        displayName: Syntax validation (3.7)
-
-      - task: UsePythonVersion@0
-        displayName: Set up python
-        inputs:
-          versionSpec: 3.11
-
-      - bash: python .azure-pipelines/syntax-validation.py
-        displayName: Syntax validation (3.10)
-
-      - bash: |
-          set -eux
-          pip install --disable-pip-version-check ruff
-          python .azure-pipelines/ruff-validation.py
-        displayName: Ruff validation
-
-      - bash: |
-          set -eux
-          # install versions matching the ones in the corresponding pre-commit hook
-          pip install --disable-pip-version-check mypy==1.9.0 types-PyYAML==6.0.12 types-requests==2.31.0
-          mypy --no-strict-optional dials_data/
-        displayName: Type checking
-
       # Set up constants for further build steps
       - bash: |
           echo "##vso[task.setvariable variable=BUILD_REPOSITORY_NAME;isOutput=true]${BUILD_REPOSITORY_NAME}"
@@ -157,14 +127,15 @@ stages:
       vmImage: ubuntu-20.04
     strategy:
       matrix:
-        python38:
-          PYTHON_VERSION: 3.8
         python39:
           PYTHON_VERSION: 3.9
         python310:
           PYTHON_VERSION: 3.10
         python311:
           PYTHON_VERSION: 3.11
+        python312:
+          PYTHON_VERSION: 3.12
+
     steps:
     - template: ci.yml
   - job: macOS
@@ -172,14 +143,15 @@ stages:
       vmImage: macOS-latest
     strategy:
       matrix:
-        python38:
-          PYTHON_VERSION: 3.8
         python39:
           PYTHON_VERSION: 3.9
         python310:
           PYTHON_VERSION: 3.10
         python311:
           PYTHON_VERSION: 3.11
+        python312:
+          PYTHON_VERSION: 3.12
+
     steps:
     - template: ci.yml
   - job: windows
@@ -187,14 +159,15 @@ stages:
       vmImage: windows-latest
     strategy:
       matrix:
-        python38:
-          PYTHON_VERSION: 3.8
         python39:
           PYTHON_VERSION: 3.9
         python310:
           PYTHON_VERSION: 3.10
         python311:
           PYTHON_VERSION: 3.11
+        python312:
+          PYTHON_VERSION: 3.12
+
     steps:
     - template: ci-windows.yml
 
@@ -205,7 +178,7 @@ stages:
   - tests
   condition: and(succeeded(),
                  eq(dependencies.static.outputs['checks.constants.BUILD_REPOSITORY_NAME'], 'dials/data'),
-                 eq(dependencies.static.outputs['checks.constants.BUILD_SOURCEBRANCH'], 'refs/heads/master'))
+                 eq(dependencies.static.outputs['checks.constants.BUILD_SOURCEBRANCH'], 'refs/heads/main'))
   jobs:
   - job: pypi
     displayName: Publish pypi release
@@ -247,7 +220,7 @@ stages:
   - build
   - tests
   condition: and(succeeded(),
-                 eq(dependencies.static.outputs['checks.constants.BUILD_SOURCEBRANCH'], 'refs/heads/master'),
+                 eq(dependencies.static.outputs['checks.constants.BUILD_SOURCEBRANCH'], 'refs/heads/main'),
                  eq(dependencies.static.outputs['checks.constants.BUILD_REPOSITORY_NAME'], 'dials/data'))
              # only run this job in the main branch of the main repository
   jobs:
