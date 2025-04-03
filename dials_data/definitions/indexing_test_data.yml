@@ -24,5 +24,9 @@ data:
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-SWEEP4-strong.pickle
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-experiments.json
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-indexed.pickle
-
-
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/4rotation-experiments.json
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/4rotation-strong.refl
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/MXSW-904-1_SWEEP1_experiments.json
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/MXSW-904-1_SWEEP1_strong.pickle
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/trypsin-experiments.json
+  - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/trypsin-indexed.pickle
