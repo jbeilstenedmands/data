@@ -38,3 +38,5 @@ data:
   - url: https://github.com/dials/data-files/raw/62fb6713fea2063e723a20ca13bdff2a1ad24f85/misc_regression/prediction-varying-crystal.expt
   - url: https://github.com/dials/data-files/raw/62fb6713fea2063e723a20ca13bdff2a1ad24f85/misc_regression/sim_mx-GXPARM.XDS
   - url: https://github.com/dials/data-files/raw/62fb6713fea2063e723a20ca13bdff2a1ad24f85/misc_regression/sim_mx-INTEGRATE.HKL
+  - url: https://github.com/dials/data-files/raw/cf0804dc0e7ce007c2b36fc9aa7ac6b2e96a0b02/misc_regression/mosflm-outlier-rejection-shoeboxes.pickle.bz2
+  - url: https://github.com/dials/data-files/raw/cf0804dc0e7ce007c2b36fc9aa7ac6b2e96a0b02/misc_regression/mosflm-outlier-rejection.refl
