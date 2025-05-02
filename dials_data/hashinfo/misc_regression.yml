@@ -1,4 +1,4 @@
-definition: 6f395685b41c580a04b73f251abf623afc300dd0c8abd94f207fd5784f6ef47c
+definition: 0fd0aacd20c5f4ebe90d71cf71469ab7135b7a9f5f290ddf24b7d2179f78390e
 formatversion: 1
 verify:
 - hash: 3fa4b62ccf6ead75ae50cdd35d86d4283c7ea926d57a6f09fc987b5708fd9f46
@@ -59,3 +59,7 @@ verify:
   size: 556
 - hash: a582fe2c921f4e0e9d596abe355ff08765a196506feb9dd97ff65bee6b3b2c7e
   size: 16561179
+- hash: 58a278ffc8ccffb659e1cde0c7cf2ae1157bc36746aa36c1c3b4349aa805edc4
+  size: 468881
+- hash: b823bd58403c4b1cbb3d7dc3fea9eb224523908ff83337cd5b4afd7ed434f2f1
+  size: 2460183
