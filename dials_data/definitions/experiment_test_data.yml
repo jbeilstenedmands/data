@@ -16,7 +16,7 @@ data:
   - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/experiment_3.json
   - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/experiment_4.json
   - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/goniometer.json
-  - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/imageset.json
+  - url: https://github.com/dials/data-files/raw/7c3d50a444c85e6b0306d3eb5ae60a3d99c3940a/experiment_test_data/imageset.json
   - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/kappa_experiments.json
   - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/scan.json
-  - url: https://github.com/dials/data-files/raw/cf44300fc31c7f36ab43bfa10798d55187b1491a/experiment_test_data/sweep.json
+  - url: https://github.com/dials/data-files/raw/7c3d50a444c85e6b0306d3eb5ae60a3d99c3940a/experiment_test_data/sweep.json
