@@ -43,4 +43,4 @@ data:
   - url: https://github.com/dials/data-files/raw/447f7133cac268222e804f233dee6e4af617dd12/centroid_test_data/multi_sweep_indexed.expt
   - url: https://github.com/dials/data-files/raw/447f7133cac268222e804f233dee6e4af617dd12/centroid_test_data/multi_sweep_indexed.refl
   - url: https://github.com/dials/data-files/raw/6d480ff8635232b9d04621603285fd9c92277846/centroid_test_data/lookup_pedestal.pickle.bz2
-
+  - url: https://github.com/dials/data-files/raw/b3bc6ddcf065ecd087c92247f9169af6164db535/centroid_test_data/lookup_gain.pickle.bz2
