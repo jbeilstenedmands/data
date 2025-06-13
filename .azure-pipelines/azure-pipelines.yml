@@ -5,7 +5,7 @@ stages:
   - job: checks
     displayName: static code analysis
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     steps:
       # Set up constants for further build steps
       - bash: |
@@ -47,7 +47,7 @@ stages:
   - job: build
     displayName: build package
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     steps:
       - task: UsePythonVersion@0
         displayName: Set up python
@@ -90,7 +90,7 @@ stages:
   - job: update
     displayName: Update hash information
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     steps:
       - task: UsePythonVersion@0
         displayName: Set up python
@@ -124,7 +124,7 @@ stages:
   jobs:
   - job: linux
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     strategy:
       matrix:
         python39:
@@ -183,7 +183,7 @@ stages:
   - job: pypi
     displayName: Publish pypi release
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     steps:
       - checkout: none
 
@@ -227,7 +227,7 @@ stages:
   - job: hashinfo
     displayName: Check hashes
     pool:
-      vmImage: ubuntu-20.04
+      vmImage: ubuntu-latest
     steps:
       - task: UsePythonVersion@0
         displayName: Set up python
