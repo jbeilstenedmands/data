@@ -30,3 +30,7 @@ data:
   - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/MXSW-904-1_SWEEP1_strong.pickle
   - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/trypsin-experiments.json
   - url: https://github.com/dials/data-files/raw/94e6843f700b302f07bb43eb462ee56ef6d88143/indexing_test_data/trypsin-indexed.pickle
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/ins14_24_imported.expt
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/ins14_24_strong.refl.gz
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/c2sum_imported.expt
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/c2sum_strong.refl.gz
