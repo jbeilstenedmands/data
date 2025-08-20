@@ -24,5 +24,9 @@ data:
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-SWEEP4-strong.pickle
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-experiments.json
   - url: https://github.com/dials/data-files/raw/7678650d1dab1506e757ec26cf545921098f43b2/indexing_test_data/multi_sweep-indexed.pickle
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/ins14_24_imported.expt
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/ins14_24_strong.refl.gz
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/c2sum_imported.expt
+  - url: https://github.com/dials/data-files/raw/98a20bea0b3ce961954cc50210df8eed1fa6fccc/indexing_test_data/c2sum_strong.refl.gz
 
 
